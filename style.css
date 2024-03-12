@@ -1,0 +1,143 @@
+body {
+  font-family: 'Open Sans', sans-serif; /* Choose your preferred font family */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #2d3436; /* Dark background for header */
+  color: white; /* White text for good contrast */
+  padding: 1rem;
+  text-align: center;
+  height: 10vh;
+}
+
+/* Adjust font size and line height for h2 in header */
+h2 {
+  font-size: 1.5rem; /* Adjust font size as needed */
+  line-height: 1; /* Ensure single line display */
+  margin: 0; /* Remove default margin for better spacing */
+}
+
+main {
+  display: flex;
+  flex: 1;
+}
+
+/* Style navigation bar with light background */
+nav {
+  width: 20%;
+  background-color: #f8f9fa; /* Light background for navigation */
+  padding: 0.5rem 1rem; /* Reduced top/bottom padding, minimal left/right */
+}
+
+/* Style navigation links with dark text color */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  margin-bottom: 1rem;
+  padding: 0.5rem -1rem; /* Adjusted padding for click target and spacing */
+}
+
+/* Default link styles */
+nav a {
+  color: #212529; /* Dark text color for navigation links */
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem -1rem;
+  transition: color 0.2s ease-in-out;
+}
+
+/* Active link styles - change color and slightly bigger font */
+nav a.active {
+  color: #343a40; /* Slightly lighter text for better contrast */
+  font-size: 1.1em; /* Increase font size by 10% (adjust as desired) */
+}
+
+nav a:hover {
+  color: #343a40; /* Slightly darker shade on hover for visual feedback */
+}
+
+#content-area {
+  padding: 1rem;
+  flex: 1;
+}
+
+/* Existing styles... */
+
+.modal {
+  display: none; /* Hide the modal initially */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.4); /* Semi-transparent black background */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Adjust width as needed */
+  min-width: 300px; /* Set a minimum width for smaller screens */
+}
+
+.modal-title {
+  margin-bottom: 10px;
+}
+
+.modal-close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  color: black;
+  text-decoration: none;
+}
+
+/* Style the submit button (optional) */
+.modal button[type="submit"] {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+#content-area {
+  position: relative; /* Ensure the content area is positioned */
+}
+
+.new-product {
+  position: absolute; /* Position the button absolutely */
+  top: 10px; /* 10px from the top */
+  right: 10px; /* 10px from the right */
+  background-color: #4CAF50; /* Green background color */
+  color: white; /* White text color */
+  padding: 10px 20px; /* Padding around the text */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Cursor style on hover */
+  transition: background-color 0.3s ease; /* Smooth transition for background color change */
+}
+
+.new-product:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
